@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "chmod +x node_modules/.bin/vite && vite build",
     "preview": "vite preview",
-     "postinstall": "chmod +x node_modules/.bin/vite"
+    "vercel-build": "npm ci && npm run build"
   },
   "dependencies": {
     "@fullcalendar/daygrid": "^6.1.18",
