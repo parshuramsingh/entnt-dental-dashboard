@@ -6,7 +6,7 @@ A fully responsive, modern dental management system built with **React**, featur
 
 ## Live Demo
 
-🔗 [Deployed App (Netlify/Vercel)](https://your-deployed-link.com)  
+🔗 [Deployed App (Vercel)](https://entnt-dental-dashboard-drab.vercel.app/)  
 📂 [GitHub Repository](https://github.com/yourusername/entnt-dental-dashboard)
 
 ---
