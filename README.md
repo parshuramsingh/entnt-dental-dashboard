@@ -206,5 +206,16 @@ npm run dev
 ✅ File Upload + Notification + Charts
 
 ---
+📞 Contact
+If you have any questions or would like to connect:
+
+👤 Name: Parshuram Singh
+
+📧 Email: parshuram7714@gmail.com
+
+📱 Phone: +91 93890 80688
+
+🌐 GitHub: github.com/parshuramsingh
+
 
 **Built with ❤️ for ENTNT Dental Assignment.**
