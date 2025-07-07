@@ -8,7 +8,8 @@ import { useApp } from '../context/AppContext';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Modal from '../components/ui/Modal';
-import IncidentForm from '../components/incidents/incidentForm';
+import IncidentForm from '../components/incidents/IncidentForm';
+
 
 
 const AnimatedBtn = ({ icon: Icon, children, ...rest }) => (
