@@ -22,7 +22,6 @@ export default function MyProfile() {
         transition={{ duration: 0.6 }}
         className="bg-white/60 dark:bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl p-6 max-w-xl mx-auto"
       >
-        {/* Avatar & Name */}
         <div className="flex items-center gap-4 mb-6">
           <div className="h-16 w-16 rounded-full bg-blue-200 dark:bg-blue-900 text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse">
             {user.email[0].toUpperCase()}
@@ -32,8 +31,7 @@ export default function MyProfile() {
             <p className="text-sm text-gray-500 dark:text-gray-400 capitalize">{user.role}</p>
           </div>
         </div>
-
-        {/* Info Grid */}
+        
         <div className="space-y-3 text-sm text-gray-800 dark:text-gray-300">
           <div className="flex justify-between">
             <span className="font-medium">📧 Email</span>

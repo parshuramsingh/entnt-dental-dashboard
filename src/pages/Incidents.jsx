@@ -10,7 +10,7 @@ import Button from '../components/ui/Button';
 import Modal from '../components/ui/Modal';
 import IncidentForm from '../components/incidents/incidentForm';
 
-/* Animated Add Button */
+
 const AnimatedBtn = ({ icon: Icon, children, ...rest }) => (
   <motion.button
     whileHover={{ scale: 1.05 }}

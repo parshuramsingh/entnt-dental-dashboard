@@ -48,14 +48,14 @@ const theme = {
 };
 
 export default function CalendarPage() {
-  /* ───────── State & Context ───────── */
+  
   const { state, dispatch } = useApp();
   const [search, setSearch] = useState('');
   const [selectedDate, setSelectedDate] = useState(null);
   const [dateInput, setDateInput] = useState('');
   const [selectedEvent, setSelectedEvent] = useState(null);
 
-  /* ───────── Transform incidents → events ───────── */
+
   const events = useMemo(
     () =>
       state.incidents
@@ -80,7 +80,7 @@ export default function CalendarPage() {
     [state.incidents, search],
   );
 
-  /* ───────── Quick metrics ───────── */
+  
   const today = new Date();
   const upcomingMonth = events.filter(
     (e) => isSameMonth(e.start, today) && e.start >= today,
@@ -91,7 +91,6 @@ export default function CalendarPage() {
     ? events.filter((ev) => isSameDay(ev.start, selectedDate))
     : [];
 
-  /* ───────── Helpers ───────── */
   const toggleStatus = (id, status) => {
     dispatch({
       type: 'UPDATE_INCIDENT',
@@ -107,7 +106,7 @@ export default function CalendarPage() {
     Cost: `₹${e.cost}`,
   }));
 
-  /* ───────── Controlled date input → calendar focus ───────── */
+  
   useEffect(() => {
     if (dateInput) {
       const d = parseISO(dateInput);
@@ -115,7 +114,7 @@ export default function CalendarPage() {
     }
   }, [dateInput]);
 
-  /* ✨ Framer Motion variants */
+  /* Framer Motion variants */
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     show: (i = 0) => ({
