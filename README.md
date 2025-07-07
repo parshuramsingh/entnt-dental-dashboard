@@ -148,53 +148,48 @@ npm run dev
 
 | Challenge | Solution |
 |----------|----------|
-| 🌗 **Dark Mode inconsistencies** across components | Initially, some form elements didn’t respond to dark mode. Solved by enforcing consistent Tailwind dark utility classes and toggling `document.documentElement.classList`. |
-| 📱 **Mobile Sidebar stutter on animation** | On some devices, sidebar animation was choppy. Introduced `Framer Motion`'s `AnimatePresence` + `tween` transitions for smoother entry/exit. |
-| 🔔 **Notification dropdown overlapping UI** | Notification panel would clip or overlap on small screens. Added z-index and relative parent with `max-height` + scroll to fix overflow issues. |
-| 📅 **Calendar display misalignment** on certain dates | `react-big-calendar` sometimes rendered month view with offset. Fixed via custom styling + overriding default calendar padding/margin. |
-| 📂 **Uploaded file preview not showing** | File preview failed when file was re-selected after deletion. Fixed by updating the `FileUpload` component to reset file input using `key` prop and revoking URLs properly. |
-| 📉 **Chart PDF export cuts off axis labels** | The `recharts` canvas did not render properly in PDF. Used `html2canvas` + adjusted layout box model and width to preserve chart clarity in exports. |
-| 🧪 **Date-time local input not defaulting correctly** | `min={new Date().toISOString()}` failed due to formatting. Fixed by slicing the string (`.slice(0,16)`) to match `datetime-local` input format. |
-| 🧠 **Patient ID mapping missing** in notifications | Notifications showed "undefined" instead of patient name. Refactored `getPatientName()` utility to return fallback string like `Unknown`. |
-| 🧾 **Toast re-triggered on every render** | Toasts fired multiple times due to stale state. Fixed with ref checks and triggering toasts only on fresh unread changes using useEffect dependencies. |
-| 🔄 **Login redirect delay** | After login, components re-mounted before `user` was available. Solved with conditional rendering and redirect logic only after `user` is set in `AuthContext`. |
-| 🧹 **Memory leak on image previews** | Browser memory usage increased after repeated file uploads. Handled it by calling `URL.revokeObjectURL()` inside cleanup `useEffect`. |
-| 📋 **Repetitive styles** in form components | Multiple forms had repeated Tailwind utility classes. Abstracted reusable `Input`, `Button`, `Modal`, and `Card` components to keep code DRY. |
-| ⚠️ **LocalStorage mismatch** during theme toggle | Theme flickered on initial load. Fixed by reading and applying theme in `useEffect()` at mount before UI renders. |
-| 📐 **Overflow issues on smaller devices** | Some tables and charts broke layout. Fixed using Tailwind's `overflow-x-auto` and responsive `min-w` table settings. |
+|  **Dark Mode inconsistencies** across components | Initially, some form elements didn’t respond to dark mode. Solved by enforcing consistent Tailwind dark utility classes and toggling `document.documentElement.classList`. |
+|  **Mobile Sidebar stutter on animation** | On some devices, sidebar animation was choppy. Introduced `Framer Motion`'s `AnimatePresence` + `tween` transitions for smoother entry/exit. |
+|  **Notification dropdown overlapping UI** | Notification panel would clip or overlap on small screens. Added z-index and relative parent with `max-height` + scroll to fix overflow issues. |
+|  **Calendar display misalignment** on certain dates | `react-big-calendar` sometimes rendered month view with offset. Fixed via custom styling + overriding default calendar padding/margin. |
+|  **Uploaded file preview not showing** | File preview failed when file was re-selected after deletion. Fixed by updating the `FileUpload` component to reset file input using `key` prop and revoking URLs properly. |
+|  **Chart PDF export cuts off axis labels** | The `recharts` canvas did not render properly in PDF. Used `html2canvas` + adjusted layout box model and width to preserve chart clarity in exports. |
+|  **Date-time local input not defaulting correctly** | `min={new Date().toISOString()}` failed due to formatting. Fixed by slicing the string (`.slice(0,16)`) to match `datetime-local` input format. |
+|  **Patient ID mapping missing** in notifications | Notifications showed "undefined" instead of patient name. Refactored `getPatientName()` utility to return fallback string like `Unknown`. |
+|  **Toast re-triggered on every render** | Toasts fired multiple times due to stale state. Fixed with ref checks and triggering toasts only on fresh unread changes using useEffect dependencies. |
+|  **Login redirect delay** | After login, components re-mounted before `user` was available. Solved with conditional rendering and redirect logic only after `user` is set in `AuthContext`. |
+|  **Memory leak on image previews** | Browser memory usage increased after repeated file uploads. Handled it by calling `URL.revokeObjectURL()` inside cleanup `useEffect`. |
+|  **Repetitive styles** in form components | Multiple forms had repeated Tailwind utility classes. Abstracted reusable `Input`, `Button`, `Modal`, and `Card` components to keep code DRY. |
+|  **LocalStorage mismatch** during theme toggle | Theme flickered on initial load. Fixed by reading and applying theme in `useEffect()` at mount before UI renders. |
+|  **Overflow issues on smaller devices** | Some tables and charts broke layout. Fixed using Tailwind's `overflow-x-auto` and responsive `min-w` table settings. |
 
 ---
 
 ## ✨ Bonus Features
 
-✅ Dark Mode with persistent theme toggle
-✅ Toast + Sound Notifications with localStorage tracking
-✅ PDF Export of Chart (Monthly Revenue)
-✅ Fully Responsive Layout with mobile-first UX
-✅ Animated Sidebar using Framer Motion
-✅ Modular & Reusable UI Components (Card, Button, Input, Modal, FileUpload)
-✅ Memory-safe File Uploads with automatic cleanup (URL.revokeObjectURL)
-✅ Form with Simulated Appointment Booking (Landing Page)
-✅ Landing Page with Smooth Scroll Navigation
-✅ Real-Time Notifications with Audio Feedback
-✅ Admin Dashboard with Chart + Stats + Export
-✅ Realtime Patient Count & Revenue Calculation
-✅ Framer Motion Hover & Tap Animation on Buttons
-✅ Mobile Notification Dropdown with Scroll & Accessibility
-✅ Clean Git Commit History (meaningful commits)
-✅ Fallbacks for Broken Images (onError handlers)
-✅ Role-Based Sidebar Navigation
-✅ Simulated Patient ID Linking in Notifications
-✅ Scroll Lock for Mobile Sidebar Menu
-✅ Graceful Form Reset After Submission
-✅ Custom Animated Buttons (hover, tap feedback)
-✅ Auto-scroll to sections on nav click (#anchor smooth scroll)
-✅ Minified DateTime inputs to match HTML5 format
-✅ Dev-friendly logs (checks for missing section IDs on landing)
-✅ Semantic HTML & Accessibility-Focused Labels
-✅ Deployment-ready via Vercel or Netlify
-✅ No Code Bloat – Tailwind utility classes and shared design system
-
+✅ Dark Mode with persistent theme toggle  
+✅ Toast + Sound Notifications with localStorage tracking  
+✅ PDF Export of Chart (Monthly Revenue)  
+✅ Fully Responsive Layout with mobile-first UX  
+✅ Animated Sidebar using Framer Motion  
+✅ Modular & Reusable UI Components (Card, Button, Input, Modal, FileUpload)  
+✅ Memory-safe File Uploads with automatic cleanup (URL.revokeObjectURL)  
+✅ Form with Simulated Appointment Booking (Landing Page)  
+✅ Landing Page with Smooth Scroll Navigation  
+✅ Real-Time Notifications with Audio Feedback  
+✅ Admin Dashboard with Chart + Stats + Export  
+✅ Realtime Patient Count & Revenue Calculation  
+✅ Framer Motion Hover & Tap Animation on Buttons  
+✅ Mobile Notification Dropdown with Scroll & Accessibility  
+✅ Clean Git Commit History (meaningful commits)  
+✅ Fallbacks for Broken Images (onError handlers)  
+✅ Role-Based Sidebar Navigation  
+✅ Simulated Patient ID Linking in Notifications  
+✅ Scroll Lock for Mobile Sidebar Menu  
+✅ Graceful Form Reset After Submission  
+✅ Custom Animated Buttons (hover, tap feedback)  
+✅ Auto-scroll to sections on nav click (#anchor smooth scroll)  
+✅ Minified DateTime inputs to match HTML5 format  
 
 
 ---
