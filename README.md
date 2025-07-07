@@ -1,10 +1,10 @@
 # 🦷 ENTNT Dental Center – React Dashboard Assignment
 
-A fully responsive, modern dental management system built with **React**, featuring **simulated authentication**, **role-based dashboards**, **dark mode**, **file uploads**, and **PDF/chart export** — all without backend or external auth/data libraries.
+A fully responsive, modern dental management system built with **React**, featuring **simulated authentication**, **role-based dashboards**, **dark mode**, **file uploads**, and **PDF/chart export**  all without backend or external auth/data libraries.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 🔗 [Deployed App (Netlify/Vercel)](https://your-deployed-link.com)  
 📂 [GitHub Repository](https://github.com/yourusername/entnt-dental-dashboard)
