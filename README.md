@@ -1,4 +1,4 @@
-# 🦷 ENTNT Dental Center – React Dashboard Assignment
+# 🦷 ENTNT Dental Center – React Dashboard 
 
 A fully responsive, modern dental management system built with **React**, featuring **simulated authentication**, **role-based dashboards**, **dark mode**, **file uploads**, and **PDF/chart export**  all without backend or external auth/data libraries.
 
@@ -6,8 +6,8 @@ A fully responsive, modern dental management system built with **React**, featur
 
 ## Live Demo
 
-🔗 [Deployed App (Netlify/Vercel)](https://your-deployed-link.com)  
-📂 [GitHub Repository](https://github.com/yourusername/entnt-dental-dashboard)
+🔗 [Deployed App (Vercel)](https://entnt-dental-dashboard-drab.vercel.app/)  
+📂 [GitHub Repository](https://github.com/parshuramsingh/entnt-dental-dashboard)
 
 ---
 
@@ -19,7 +19,7 @@ A fully responsive, modern dental management system built with **React**, featur
 - Calendar (react-big-calendar)
 - Patient list (search + CRUD)
 - Incident management (appointments, treatments)
-- File upload for X-rays, invoices
+- File upload for X-rays, invoices 
 - Export revenue chart as PDF
 - Fully responsive with hamburger menu and animated sidebar
 
@@ -90,7 +90,7 @@ src/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/entnt-dental-dashboard.git
+git clone https://github.com/parshuramsingh/entnt-dental-dashboard.git
 cd entnt-dental-dashboard
 
 # 2. Install dependencies
@@ -206,7 +206,22 @@ npm run dev
 ✅ File Upload + Notification + Charts
 
 ---
+📞 Contact
+If you have any questions or would like to connect:
+
+👤 Name: Parshuram Singh
+
+📧 Email: parshuram7714@gmail.com
+
+📱 Phone: +91 93890 80688
+
+🌐 GitHub: github.com/parshuramsingh
+
+
+
 
 **Built with ❤️ for ENTNT Dental Assignment.**
 ### Pair Extraordinaire Test
 This line was added with a co-author commit.
+=======
+
