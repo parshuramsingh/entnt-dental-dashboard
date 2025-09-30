@@ -208,3 +208,5 @@ npm run dev
 ---
 
 **Built with ❤️ for ENTNT Dental Assignment.**
+### Pair Extraordinaire Test
+This line was added with a co-author commit.
