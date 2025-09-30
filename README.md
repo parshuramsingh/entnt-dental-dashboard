@@ -19,7 +19,7 @@ A fully responsive, modern dental management system built with **React**, featur
 - Calendar (react-big-calendar)
 - Patient list (search + CRUD)
 - Incident management (appointments, treatments)
-- File upload for X-rays, invoices etc
+- File upload for X-rays, invoices 
 - Export revenue chart as PDF
 - Fully responsive with hamburger menu and animated sidebar
 
